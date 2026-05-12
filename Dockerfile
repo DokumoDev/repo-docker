@@ -1,2 +1,4 @@
-echo "FROM nginx:alpine\n
-COPY . /usr/share/nginx/html" > Dockerfile
+cat <<EOF > Dockerfile
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EOF
